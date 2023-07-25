@@ -35,7 +35,7 @@ petalValue = st.sidebar.slider('petal length (cm)', min_value=0.0, max_value=10.
 st.title('Iris Classifier')
 st.write('## Input Value')
 
-# インプットデータ（1行のデータフレーム）
+@REM # インプットデータ（1行のデータフレーム）
 value_df = pd.DataFrame([], columns=['data','sepal length (cm)','petal length (cm)'])
 record = pd.Series(['data',sepalValue, petalValue], index=value_df.columns)
 value_df = pd.concat([value_df, pd.DataFrame(record).T])
